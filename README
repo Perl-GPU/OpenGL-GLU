@@ -1,0 +1,34 @@
+OpenGL-GLU version 0.01
+=======================
+
+OpenGL::GLU provides perl bindings to the OpenGL Utility Library
+(GLU).  It is derived from the Perl OpenGL code base to extract
+a stand-alone package.  If you just use GLU features from OpenGL,
+then you should be able to accomplish the same with OpenGL::GLU.
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+  TBD
+
+COPYRIGHT AND LICENCE
+
+Put the correct copyright and licence information here.
+
+Copyright (C) 2017 by Chris Marshall.
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.14 or,
+at your option, any later version of Perl 5 you may have available.
+
+

@@ -1,0 +1,7 @@
+Revision history for Perl extension OpenGL::GLU.
+
+
+0.01  Sat Feb 11 14:38:50 2017
+	- original version; created by h2xs 1.23 with options
+		-O -F -DGL_OES_EGL_image=1 -d -n OpenGL::GLU -x -M '^(glu|GLU_)' glu.h
+        - merged in GLU XS from OpenGL
