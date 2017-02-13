@@ -394,7 +394,7 @@ our @EXPORT = qw(
 	GLU_V_STEP
 );
 
-our $VERSION = '0.01';
+our $VERSION = '0.01_01';
 
 sub AUTOLOAD {
     # This AUTOLOAD is used to 'autoload' constants from the constant()
