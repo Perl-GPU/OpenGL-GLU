@@ -1,7 +1,8 @@
 Revision history for Perl extension OpenGL::GLU.
 
 
-0.01_1  TBD
+0.02    2017-02-13 10:26:37-05:00
+        - Change minimum perl version to 5.8
 
 
 0.01    Sat Feb 11 14:38:50 2017

@@ -1,6 +1,6 @@
 package OpenGL::GLU;
 
-use 5.014;
+use 5.008;
 use strict;
 use warnings;
 use Carp;
@@ -394,7 +394,7 @@ our @EXPORT = qw(
 	GLU_V_STEP
 );
 
-our $VERSION = '0.01_01';
+our $VERSION = '0.02';
 
 sub AUTOLOAD {
     # This AUTOLOAD is used to 'autoload' constants from the constant()

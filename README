@@ -1,4 +1,4 @@
-OpenGL-GLU version 0.01
+OpenGL-GLU version 0.02
 =======================
 
 OpenGL::GLU provides perl bindings to the OpenGL Utility Library
@@ -23,7 +23,6 @@ This module requires these other modules and libraries:
 
 COPYRIGHT AND LICENCE
 
-Put the correct copyright and licence information here.
 
 Copyright (C) 2017 by Chris Marshall.
 
