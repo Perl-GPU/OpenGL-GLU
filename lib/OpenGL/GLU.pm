@@ -229,7 +229,7 @@ our %EXPORT_TAGS = ( 'all' => [ qw(
 	gluTessEndPolygon
 	gluTessNormal
 	gluTessProperty
-	gluTessVertex
+	gluTessVertex_p
 	gluUnProject
 	gluUnProject4
 ) ] );

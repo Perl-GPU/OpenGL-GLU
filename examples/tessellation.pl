@@ -15,7 +15,10 @@ Paul Seamons
 
 =cut
 
-use OpenGL qw(:all);
+use OpenGL::GLUT qw(:all);
+use OpenGL::GLU qw(:all);
+use OpenGL::Modern qw(:all);
+
 use strict;
 use warnings;
 

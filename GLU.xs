@@ -13,8 +13,6 @@
 
 #include "gl_util.h"
 
-#include "const-c.inc"
-
 #if defined(__APPLE__)
 #include <OpenGL/glu.h>
 #else
@@ -32,6 +30,8 @@ typedef GLUtriangulatorObj      GLUtriangulatorObj;
 typedef GLUquadricObj           GLUquadricObjObj;
 #endif
 #endif
+
+#include "const-c.inc"
 
 #ifndef CALLBACK
 #define CALLBACK

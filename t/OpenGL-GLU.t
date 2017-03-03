@@ -60,10 +60,10 @@ foreach my $constname (qw(
 	GLU_VERSION_1_1 GLU_VERSION_1_2 GLU_VERSION_1_3 GLU_VERTEX GLU_V_STEP)) {
   next if (eval "my \$a = $constname; 1");
   if ($@ =~ /^Your vendor has not defined OpenGL::GLU macro $constname/) {
-    print "# pass: $@";
-  } else {
     print "# fail: $@";
     $fail = 1;
+  } else {
+    print "# pass: $@";
   }
 
 }
