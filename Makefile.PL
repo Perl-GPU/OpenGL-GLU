@@ -1,12 +1,22 @@
 use 5.008;
 use ExtUtils::MakeMaker;
-# See lib/ExtUtils/MakeMaker.pm for details of how to influence
-# the contents of the Makefile that is written.
-my $LIBS = '';
-if ($^O eq 'MSWin32') {
-   $LIBS = '-lopengl32 -lglu32';
-} else {
-   $LIBS = '-lGL -lGLU';
+use Devel::CheckOS qw(os_is);
+my ( $LIBS, $DYNS );
+
+$LIBS = '';
+$DYNS = {};
+
+if ( os_is( 'MSWin32' ) ) {
+    $LIBS   = '-lopengl32 -lglu32';
+}
+elsif ( os_is( 'Cygwin' ) ) {
+    $LIBS = '-lGL -lGLU';
+}
+elsif ( os_is( 'MacOSX' ) ) {
+    $DYNS = { 'OTHERLDFLAGS' => '-framework OpenGL' };
+}
+else {
+    $LIBS = '-lGL -lGLU';
 }
 
 WriteMakefile(
@@ -17,6 +27,7 @@ WriteMakefile(
     AUTHOR            => 'chm@cpan.org',
     LICENSE           => 'perl',
     LIBS              => [$LIBS], # e.g., '-lm'
+    'dynamic_lib'     => $DYNS,
     DEFINE            => '-DGL_OES_EGL_image=1', # e.g., '-DHAVE_SOMETHING'
     INC               => '-I.', # e.g., '-I. -I/usr/include/other'
 	# Un-comment this if you add C files to link with later:

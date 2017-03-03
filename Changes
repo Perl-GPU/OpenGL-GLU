@@ -1,7 +1,9 @@
 Revision history for Perl extension OpenGL::GLU.
 
 0.02_01 TBD
-
+        - Fix gl.h and glu.h includes for __APPLE__
+          The Apple convention is <OpenGL/gl.h> and <OpenGL/glu.h>
+          where OpenGL is the name of the framework.
 
 0.02    2017-02-13 10:26:37-05:00
         - Change minimum perl version to 5.8
