@@ -1,6 +1,10 @@
 Revision history for Perl extension OpenGL::GLU.
 
-0.02_02 TBD
+0.02_02 2017-03-03 10:43:41-05:00
+        - Fixed missing constants because of out-of-order includes
+	  NOTE: have to have <GL/glu.h> before "const-c.inc"
+	- Added missing gluTessVertex to exports
+	- Fixed tests to fail on fail
 
 
 0.02_01 2017-03-03 09:18:32-05:00
