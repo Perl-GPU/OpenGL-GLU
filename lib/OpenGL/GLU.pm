@@ -30,8 +30,6 @@ our %EXPORT_TAGS = ( 'all' => [ qw(
 	GLU_ERROR
 	GLU_EXTENSIONS
 	GLU_EXTERIOR
-	GLU_EXT_nurbs_tessellator
-	GLU_EXT_object_space_tess
 	GLU_FALSE
 	GLU_FILL
 	GLU_FLAT
@@ -249,8 +247,6 @@ our @EXPORT = qw(
 	GLU_ERROR
 	GLU_EXTENSIONS
 	GLU_EXTERIOR
-	GLU_EXT_nurbs_tessellator
-	GLU_EXT_object_space_tess
 	GLU_FALSE
 	GLU_FILL
 	GLU_FLAT
@@ -461,8 +457,6 @@ None by default.
   GLU_ERROR
   GLU_EXTENSIONS
   GLU_EXTERIOR
-  GLU_EXT_nurbs_tessellator
-  GLU_EXT_object_space_tess
   GLU_FALSE
   GLU_FILL
   GLU_FLAT
