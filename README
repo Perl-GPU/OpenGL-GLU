@@ -19,15 +19,20 @@ DEPENDENCIES
 
 This module requires these other modules and libraries:
 
-  TBD
+  Do not install with OpenGL!  This is a stand-alone
+  module for use with OpenGL::Modern.
+
 
 COPYRIGHT AND LICENCE
 
+ Copyright (c) 1998,1999 Kenneth Albanowski. All rights reserved.
+ Copyright (c) 2007 Bob Free. All rights reserved.
+ Copyright (c) 2009-2013 Chris Marshall.
+ Copyright (C) 2017 by Chris Marshall. All rights reserved.
 
-Copyright (C) 2017 by Chris Marshall.
 
 This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.14 or,
-at your option, any later version of Perl 5 you may have available.
+it under the same terms as Perl itself.
 
+This library is based on the code from the Perl OpenGL module.
 
