@@ -1,4 +1,3 @@
-TODO: this example needs to be ported to use
-OpenGL::GLU, OpenGL::Modern and just the GLUT
-part of OpenGL (until we have a stand alone
-OpenGL::GLUT).
+NOTE: This example illustrates tessellation support
+via the GLU library which has been superceded by
+core OpenGL functionality as of version 3.1.
